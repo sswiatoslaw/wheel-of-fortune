@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+}
+
+.wheel {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform 10s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.wheel-container {
+    position: relative;
+}
+
+.wheel-pointer {
+    position: absolute;
+    left: calc(50% - 10px);
+    top: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid black;
+}
